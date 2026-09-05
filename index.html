@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Knowly — Your AI knowledge assistant for study and work." />
+  <title>Knowly — Capture. Understand. Act.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Knowly home">
+      <span class="brand-mark">K<span>✦</span></span>
+      <span>Knowly</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#modes">Study & Work</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-ghost" data-modal="loginModal">Sign in</button>
+      <button class="btn btn-primary" data-scroll="#demo">Try Knowly</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">AI KNOWLEDGE ASSISTANT</p>
+        <h1>Capture.<br><em>Understand.</em><br>Act.</h1>
+        <p class="hero-text">
+          Turn lectures, meetings, reports, slides, recordings and notes
+          into clear insights and actionable next steps — all in one place.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-large" data-scroll="#demo">Explore the demo <span>→</span></button>
+          <button class="text-btn" data-modal="howModal">See how it works <span>▶</span></button>
+        </div>
+        <div class="trust-row">
+          <span>For students</span><span>For professionals</span><span>For lifelong learners</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="academic-card">
+          <div class="laurel">❧</div>
+          <div class="mini-logo">K<span>✦</span></div>
+          <p class="mini-label">YOUR KNOWLEDGE</p>
+          <h3>Organized.<br>Understood.<br>Actionable.</h3>
+          <div class="mini-line"></div>
+          <p class="mini-note">One workspace for everything you need to learn and do.</p>
+        </div>
+        <div class="floating-card float-one"><span>✓</span> 5 action items found</div>
+        <div class="floating-card float-two"><span>✦</span> 12 key topics connected</div>
+      </div>
+    </section>
+
+    <section class="problem section">
+      <div class="section-heading centered">
+        <p class="eyebrow">THE PROBLEM</p>
+        <h2>Too much information.<br><em>Too little time.</em></h2>
+        <p>Important details are scattered across files, slides, recordings and notes. Knowly brings them together and helps you focus on what matters.</p>
+      </div>
+      <div class="source-grid">
+        <div class="source-card"><div class="source-icon">▤</div><strong>Documents</strong><span>Reports, PDFs & files</span></div>
+        <div class="source-card"><div class="source-icon">▥</div><strong>Slides</strong><span>Presentations & lessons</span></div>
+        <div class="source-card"><div class="source-icon">◉</div><strong>Audio</strong><span>Meetings & lectures</span></div>
+        <div class="source-card"><div class="source-icon">✎</div><strong>Notes</strong><span>Your own thoughts</span></div>
+      </div>
+    </section>
+
+    <section id="how" class="how section">
+      <div class="section-heading">
+        <p class="eyebrow">HOW KNOWLY WORKS</p>
+        <h2>From information<br><em>to action.</em></h2>
+      </div>
+      <div class="steps">
+        <article class="step active-step">
+          <div class="step-number">01</div>
+          <h3>Capture</h3>
+          <p>Bring your materials into one workspace. Add documents, slides, audio and notes.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">02</div>
+          <h3>Understand</h3>
+          <p>Knowly connects your sources, identifies key topics and surfaces what matters.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">03</div>
+          <h3>Act</h3>
+          <p>Turn information into insights, action items, deadlines, study tasks and next steps.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" class="features section">
+      <div class="section-heading centered">
+        <p class="eyebrow">POWERFUL FEATURES</p>
+        <h2>More than a summary.</h2>
+        <p>Knowly is designed around what you need to do with information after you receive it.</p>
+      </div>
+      <div class="feature-grid">
+        <button class="feature-card" data-feature="sources">
+          <span class="feature-icon">◈</span><span><strong>Multi-Source Intelligence</strong><small>Connect documents, slides, audio and notes into one picture.</small></span><b>→</b>
+        </button>
+        <button class="feature-card" data-feature="actions">
+          <span class="feature-icon">☷</span><span><strong>Action Extraction</strong><small>Find decisions, tasks, deadlines and important takeaways automatically.</small></span><b>→</b>
+        </button>
+        <button class="feature-card" data-feature="ask">
+          <span class="feature-icon">⌕</span><span><strong>Ask Your Materials</strong><small>Ask questions and get answers linked to your own sources.</small></span><b>→</b>
+        </button>
+        <button class="feature-card" data-feature="timeline">
+          <span class="feature-icon">◷</span><span><strong>Smart Timeline</strong><small>Jump through meetings and lectures using AI-generated key moments.</small></span><b>→</b>
+        </button>
+      </div>
+    </section>
+
+    <section id="modes" class="modes section">
+      <div class="section-heading">
+        <p class="eyebrow">ONE APP, TWO WAYS TO WORK</p>
+        <h2>Designed for<br><em>your purpose.</em></h2>
+      </div>
+      <div class="mode-switch" role="tablist">
+        <button class="mode-tab active" data-mode="study" role="tab">🎓 Study Mode</button>
+        <button class="mode-tab" data-mode="work" role="tab">💼 Work Mode</button>
+      </div>
+      <div class="mode-panel" id="studyPanel">
+        <div class="mode-copy">
+          <p class="mode-kicker">LEARN BETTER. REMEMBER MORE.</p>
+          <h3>Study Mode</h3>
+          <p>Turn lectures and learning materials into a focused study experience.</p>
+          <ul>
+            <li>Clear summaries</li><li>Key concepts</li><li>Flashcards</li><li>Practice quizzes</li><li>Topics to review</li>
+          </ul>
+        </div>
+        <div class="mock-phone">
+          <div class="phone-top">9:41 <span>● ●</span></div>
+          <h4>Study Mode</h4>
+          <div class="mock-tabs"><span class="selected">Summary</span><span>Quiz</span><span>Cards</span></div>
+          <div class="mock-box"><b>AI Summary</b><p>This lecture explains the main concepts and the key ideas you should remember.</p></div>
+          <div class="mock-box"><b>Key Concepts</b><p>12 important concepts found →</p></div>
+          <div class="mock-box"><b>Recommended for You</b><p>Practice Quiz · 10 questions →</p></div>
+        </div>
+      </div>
+      <div class="mode-panel hidden" id="workPanel">
+        <div class="mode-copy">
+          <p class="mode-kicker">WORK SMARTER. GET THINGS DONE.</p>
+          <h3>Work Mode</h3>
+          <p>Turn meetings and reports into decisions, owners and next steps.</p>
+          <ul>
+            <li>Executive summaries</li><li>Decisions made</li><li>Action items</li><li>Deadlines</li><li>Follow-up tasks</li>
+          </ul>
+        </div>
+        <div class="mock-phone">
+          <div class="phone-top">9:41 <span>● ●</span></div>
+          <h4>Work Mode</h4>
+          <div class="mock-tabs"><span class="selected">Summary</span><span>Tasks</span><span>Decisions</span></div>
+          <div class="mock-box"><b>Executive Summary</b><p>Project progress, budget update and assigned tasks.</p></div>
+          <div class="mock-box"><b>Key Decisions</b><p>✓ Deadline moved to Oct 15<br>✓ Budget increased by 15%</p></div>
+          <div class="mock-box"><b>Action Items</b><p>☐ Sarah — UI prototype<br>☐ You — Final report</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="demo section">
+      <div class="demo-shell">
+        <div>
+          <p class="eyebrow">INTERACTIVE DEMO</p>
+          <h2>See Knowly<br><em>in action.</em></h2>
+          <p>Upload a sample file or choose the demo workspace. This prototype runs entirely in your browser, so your teacher can click through it without needing an account.</p>
+          <div class="demo-actions">
+            <label class="upload-btn btn btn-primary">
+              <input id="fileInput" type="file" multiple accept=".pdf,.ppt,.pptx,.doc,.docx,.txt,.mp3,.wav,.m4a" />
+              Upload files
+            </label>
+            <button class="btn btn-outline" id="loadDemo">Load demo workspace</button>
+          </div>
+          <p class="file-status" id="fileStatus">No files selected yet.</p>
+        </div>
+        <div class="demo-app">
+          <div class="demo-top"><span class="brand-small">K<span>✦</span> Knowly</span><button class="icon-btn" id="resetDemo" title="Reset demo">↻</button></div>
+          <div class="workspace-title"><span>My Workspace</span><button id="newWorkspace">+ New</button></div>
+          <div id="workspaceList" class="workspace-list">
+            <div class="empty-state">Your workspace is ready.<br>Upload files or load the demo.</div>
+          </div>
+          <div class="demo-result hidden" id="demoResult">
+            <div class="result-head"><span>AI INSIGHTS</span><span class="status-pill">Ready</span></div>
+            <h4>What matters</h4>
+            <p>Knowly found key topics, important points and next actions from your materials.</p>
+            <div class="result-row"><span>✦ Key topics</span><b>12</b></div>
+            <div class="result-row"><span>☷ Action items</span><b>5</b></div>
+            <div class="result-row"><span>◷ Important moments</span><b>3</b></div>
+            <button class="btn btn-primary full" id="viewInsights">View insights</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing section">
+      <div class="pricing-card">
+        <div class="pricing-copy">
+          <p class="eyebrow">FIRST DOLLAR</p>
+          <h2>Everything you need to know.<br><em>For just $1/month.</em></h2>
+          <p>A simple premium plan for people who want to spend less time organizing information and more time using it.</p>
+          <button class="btn btn-primary btn-large" data-modal="subscribeModal">Choose Premium — $1/month</button>
+        </div>
+        <div class="plan">
+          <div class="plan-name">KNOWLY PREMIUM</div>
+          <div class="price">$1 <small>/ month</small></div>
+          <ul>
+            <li>✓ More uploads</li><li>✓ Multi-source analysis</li><li>✓ Action items & deadlines</li><li>✓ Ask your materials</li><li>✓ Smart timeline</li><li>✓ Study & Work modes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <p class="eyebrow">KNOW MORE. DO MORE.</p>
+      <h2>Your knowledge,<br><em>organized.</em></h2>
+      <button class="btn btn-primary btn-large" data-scroll="#demo">Try the interactive demo →</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark small">K<span>✦</span></span><strong>Knowly</strong></div>
+    <p>Capture. Understand. Act.</p>
+    <div class="footer-links"><a href="#home">Home</a><a href="#features">Features</a><a href="#pricing">Pricing</a><button class="link-btn" data-modal="aboutModal">About</button></div>
+    <small>© 2026 Knowly — Workshop 8: First Dollar App</small>
+  </footer>
+
+  <div class="modal hidden" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <div class="modal-card">
+      <button class="modal-close" data-close>×</button>
+      <p class="eyebrow">WELCOME BACK</p><h2 id="loginTitle">Sign in to Knowly</h2>
+      <input class="input" type="email" placeholder="Email address" id="loginEmail" />
+      <button class="btn btn-primary full" id="loginButton">Continue</button>
+      <p class="modal-note" id="loginNote">Demo only — no real account is created.</p>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="subscribeModal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" data-close>×</button>
+      <p class="eyebrow">KNOWLY PREMIUM</p><h2>Choose Premium</h2>
+      <div class="subscribe-price">$1 <span>/ month</span></div>
+      <p>Unlock the complete Knowly experience for this workshop prototype.</p>
+      <button class="btn btn-primary full" id="subscribeButton">Start Premium Demo</button>
+      <p class="modal-note" id="subscribeNote">No payment is processed.</p>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="howModal" role="dialog" aria-modal="true">
+    <div class="modal-card wide">
+      <button class="modal-close" data-close>×</button>
+      <p class="eyebrow">THE KNOWLY LOOP</p><h2>Capture → Understand → Act</h2>
+      <div class="modal-steps"><div><b>01</b><strong>Capture</strong><p>Bring all your learning and work materials together.</p></div><div><b>02</b><strong>Understand</strong><p>Connect sources and surface the information that matters.</p></div><div><b>03</b><strong>Act</strong><p>Turn knowledge into decisions, tasks, deadlines and study actions.</p></div></div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="aboutModal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" data-close>×</button>
+      <p class="eyebrow">ABOUT KNOWLY</p><h2>One place for what matters.</h2>
+      <p>Knowly is a workshop concept for an AI knowledge assistant designed for students and professionals. This website is an interactive prototype created for demonstration.</p>
+      <button class="btn btn-outline full" data-close>Close</button>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
