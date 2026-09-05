@@ -90,3 +90,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',
   const target=$(a.getAttribute('href'));
   if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'});}
 }));
+
+// App screens mockup
+$('#expandScreens').addEventListener('click',()=>showModal('screensModal'));

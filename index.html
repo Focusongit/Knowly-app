@@ -19,6 +19,7 @@
     <nav class="nav" aria-label="Main navigation">
       <a href="#how">How it works</a>
       <a href="#features">Features</a>
+      <a href="#screens">App Screens</a>
       <a href="#modes">Study & Work</a>
       <a href="#pricing">Pricing</a>
     </nav>
@@ -116,6 +117,42 @@
         <button class="feature-card" data-feature="timeline">
           <span class="feature-icon">◷</span><span><strong>Smart Timeline</strong><small>Jump through meetings and lectures using AI-generated key moments.</small></span><b>→</b>
         </button>
+      </div>
+    </section>
+
+    <section id="screens" class="app-screens section">
+      <div class="section-heading centered">
+        <p class="eyebrow">APP SCREENS / MOCKUP</p>
+        <h2>See Knowly<br><em>before you try it.</em></h2>
+        <p>These screens show how the Knowly mobile experience turns uploaded materials into connected insights, study support and actionable work tasks.</p>
+      </div>
+      <div class="screen-showcase">
+        <div class="screen-frame">
+          <img src="knowly-app-screens.png" alt="Knowly app screens showing My Workspace, AI Processing, Insights Dashboard, Study Mode and Work Mode" />
+        </div>
+        <div class="screen-details">
+          <div class="screen-detail active">
+            <span class="screen-number">01</span>
+            <div><strong>My Workspace</strong><p>Bring PDFs, slides, recordings and notes together in one place.</p></div>
+          </div>
+          <div class="screen-detail">
+            <span class="screen-number">02</span>
+            <div><strong>AI Processing</strong><p>Knowly connects sources and identifies the information that matters.</p></div>
+          </div>
+          <div class="screen-detail">
+            <span class="screen-number">03</span>
+            <div><strong>Insights Dashboard</strong><p>See key topics, important items, sources and useful next steps at a glance.</p></div>
+          </div>
+          <div class="screen-detail">
+            <span class="screen-number">04</span>
+            <div><strong>Study Mode</strong><p>Transform learning materials into summaries, quizzes, flashcards and review topics.</p></div>
+          </div>
+          <div class="screen-detail">
+            <span class="screen-number">05</span>
+            <div><strong>Work Mode</strong><p>Turn meetings and reports into decisions, action items and deadlines.</p></div>
+          </div>
+          <button class="btn btn-outline screen-expand" id="expandScreens">View app screens larger ↗</button>
+        </div>
       </div>
     </section>
 
@@ -267,6 +304,16 @@
       <p class="eyebrow">ABOUT KNOWLY</p><h2>One place for what matters.</h2>
       <p>Knowly is a workshop concept for an AI knowledge assistant designed for students and professionals. This website is an interactive prototype created for demonstration.</p>
       <button class="btn btn-outline full" data-close>Close</button>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="screensModal" role="dialog" aria-modal="true" aria-labelledby="screensTitle">
+    <div class="modal-card screens-modal-card">
+      <button class="modal-close" data-close>×</button>
+      <p class="eyebrow">KNOWLY APP SCREENS</p>
+      <h2 id="screensTitle">Capture. Understand. Act.</h2>
+      <div class="large-screen-image"><img src="knowly-app-screens.png" alt="Expanded Knowly app screens mockup" /></div>
+      <p class="modal-note">UI mockup for the Knowly workshop prototype. The interactive demo below demonstrates the product flow.</p>
     </div>
   </div>
 
